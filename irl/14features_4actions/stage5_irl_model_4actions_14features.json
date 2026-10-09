@@ -1,0 +1,17 @@
+{
+  "model_name": "stage5_4actions_wall_aware_return_center_maxent_cost_irl",
+  "coordinate_frame": "x_forward_y_lateral",
+  "corridor_half_width": 1,
+  "theta": [0, 0.051191003692381283, 0.12878374140785151, 0, 0, 0, 1.5288396510385776, 1.2335710635003292, 0, 0, 0, 0.63192822510144453, 0.95893234104804925, 0],
+  "action_bias": [2.7125318517500943, -1.339874767535163, -0.77908615812105131, -0.59357092609388],
+  "feature_mean": [0.45553346509597253, 0.044690465366633222, 0.0026664322550398497, 0.018752726504565508, 0.031505478543872166, 0.06434599156118144, 0.04216093214525244, 0.14533712710376395, 0.625, 0.0044161398994620868, 0.0044161398994620868, -0.0020365028078986663, 0.1622272187437088, 0.0089725725001427153],
+  "feature_std": [0.2836718921068217, 0.28907225603947478, 0.034073915484412388, 0.06870676832846008, 0.094794663029973567, 0.2453844422089394, 0.11618252686120832, 0.15996816791271104, 0.62504120924410245, 0.023371894028166262, 0.023371894028166262, 0.012603757496539589, 0.27059608983562039, 0.032577566384553537],
+  "feature_names": ["goal_distance", "wall_risk", "near_wall_cost", "current_person_risk", "predicted_person_risk", "front_person_risk", "predicted_collision_risk", "center_deviation", "lateral_motion", "same_side_current_risk", "same_side_predicted_risk", "opposite_side_bonus_as_cost", "return_to_center_cost", "outward_motion_cost"],
+  "action_names": ["slow_forward", "forward", "slight_left", "slight_right"],
+  "action_waypoints": [[0.35, 0], [0.6, 0], [0.5, 0.1], [0.5, -0.1]],
+  "final_train_acc": 0.83755274261603374,
+  "final_val_acc": 0.852803738317757,
+  "class_counts": [0, 968, 448, 480],
+  "class_weights": [1, 1, 1, 1],
+  "validation_confusion_matrix": [[0, 0, 0, 0], [0, 236, 0, 0], [0, 17, 76, 16], [0, 13, 17, 53]]
+}
